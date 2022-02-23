@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<Head>
+<style>
+body{
+    font-family:"Helvetica";
+    color: white;
+    background-color:gray;
+
+}
+h1 {color: rgb(22, 133, 0);}
+h2 {color: blue;}
+a {color:rgb(255, 145, 145);}
+ul,ol {
+    text-align: left;
+    margin-left: 30px}
+a:hover{background-color:aqua}
+img {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+p::first-letter {
+ font-family:"fantasy";
+  text-transform: uppercase;
+  font-size: 1.5em;
+ color:coral;
+}
+dl{
+    font-size: 13px;
+
+}
+dt{color:orange;
+    font-weight:bold;
+     font-family:"fantasy";
+}
+ol {
+   /* display: flex; 
+   flex-direction: column-reverse;  */
+   counter-reset: item 6;
+    /* display:block; */
+}
+ol li:before {
+content:counter(item,decimal)". ";
+ counter-increment:item -1;
+ display:block;
+
+}
+
+</style>
+
+
+<title>
+    About Aly Hazimy
+</title>
+</Head>
+
+<body>
+
+<h1>About Aly Hazimy</h1>
+
+<p>My name is <strong>Aly Hazimy</strong>, i love <strong>sports</strong>, i study <strong>computer science</strong> and i have a <strong>job</strong></p>
+<hr>
+<h2>
+    My classes this semester
+    </h2>
+    <ul>
+        <li>Software Engineering</li>
+        <li><strong>Web Developpement</strong></li>
+        <li>Operating System</li>        
+        <li>Network 3</li>
+        <li>Advanced Programming</li>        
+    </ul>
+
+<h2>My Favorite Movies</h2>
+<p><i>(I love watching movies, so here is a small list of my favorite ones)</i></p>
+<ol>
+    <li>Bridge Of Spies <a href="https://www.imdb.com/title/tt3682448/">(IMDB)</a></li>
+    <li>Interstellar <a href="https://www.imdb.com/title/tt0816692/">(IMDB)</a></li>
+    <li>Inception <a href="https://www.imdb.com/title/tt1375666/">(IMDB)</a></li>
+    <dl>
+        <dt>Director</dt>
+        <dd>Christopher Nolan</dd>
+        <dt>Genre</dt>
+        <dd>Sci-Fi, Thriller, Mysterie<a href="https://en.wikipedia.org/wiki/Inception">(more)</a></dd>
+
+    </dl>
+    <li>Shutter Island <a href="https://www.imdb.com/title/tt1130884/">(IMDB)</a></li>
+    <li>Zero Day <a href="https://www.imdb.com/title/tt5446858/">(IMDB)</a></li>
+</ol>
+
+<h2>
+    My Moods
+</h2>
+
+<p>Happy:<img src="happy.png" height="200" alt="Happy Moods">Sad:<img src="sad.png" height="200" alt="Happy Moods" ></p>
+
+<h2>
+Interesting Facts About My Classe-Mate
+</h2>
+<ul>
+    <li>Most of them are <i>sportive</i></li>
+    <li>They love <i>helping people</i></li>
+
+</ul>
+
+<p><a href="http://jigsaw.w3.org/css-validator/check/referer
+" ><img src="http://jigsaw.w3.org/css-validator/images/vcss" height="30" alt="HTML Validator"></a></p>
+</body>
+
+</html>
